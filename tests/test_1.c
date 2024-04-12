@@ -2,7 +2,7 @@
 #include "../include/cfg.h"
 
 typedef struct my_config_s {
-    long long my_int;
+    int my_int;
     long double my_double;
     bool my_bool;
     char* my_string;
@@ -55,7 +55,7 @@ int main(void) {
     }
 
     /* use the loaded config in the program */
-    printf("hi, i am %s, %s warrior. i am %Lf cm tall and have %lld street cred. my favorite drum machine is the %s.\n", 
+    printf("hi, i am %s, %s warrior. i am %Lf cm tall and have %d street cred. my favorite drum machine is the %s.\n", 
         my_config.my_string,
         my_config.my_bool ? "true" : "false",
         my_config.my_double,
